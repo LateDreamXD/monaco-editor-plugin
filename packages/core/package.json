@@ -1,0 +1,60 @@
+{
+  "name": "@latedream/monaco-editor-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Zero-config monaco-editor for Vite8 and Vue3.5",
+  "exports": {
+    "./vite": "./dist/vite.js",
+    "./vue": "./dist/vue.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "homepage": "https://latedreamxd.github.io/monaco-editor-plugin/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LateDreamXD/monaco-editor-plugin",
+    "directory": "packages/core"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vite-plugin",
+    "vue",
+    "monaco-editor"
+  ],
+  "author": "LateDreamXD",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "rolldown": "^1"
+  },
+  "devDependencies": {
+    "tsdown": "^0.23.7",
+    "unplugin-vue": "^8.0.1",
+    "vite": "^8.3.8",
+    "vue-tsc": "^3.3.14"
+  },
+  "peerDependencies": {
+    "monaco-editor": "^0",
+    "vite": "^8",
+    "vitepress": "^2.0.0-alpha.18",
+    "vue": "^3.5"
+  },
+  "peerDependenciesMeta": {
+    "vite": {
+      "optional": true
+    },
+    "vitepress": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  }
+}

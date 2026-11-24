@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "types": ["vitepress/client"]
+  },
+  "include": [
+    ".vitepress/**/*.ts"
+  ]
+}

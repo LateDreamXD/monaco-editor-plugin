@@ -1,0 +1,23 @@
+{
+  "name": "monaco-editor-plugin",
+  "version": "0.0.0",
+  "description": "Monorepo of monaco-editor-plugin",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LateDreamXD",
+  "license": "MIT",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.21.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.21.0",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  }
+}
