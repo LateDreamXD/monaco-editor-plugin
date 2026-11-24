@@ -84,6 +84,8 @@ const MonacoEditorPlugin = (options?: IMonacoEditorOptions): Plugin => {
 					resolvedConfig.build.outDir,
 					resolvedConfig.base
 				)
+			else if(resolvedConfig.build.outDir.startsWith(resolvedConfig.root)) // vitepress
+				distPath = path.join(resolvedConfig.build.outDir, options.publicPath!)
 			else
 				distPath = resolvedConfig.build.outDir.startsWith(resolvedConfig.root)?
 				path.join(
