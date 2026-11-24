@@ -9,7 +9,9 @@ import Demo from './components/Demo.vue';
 useLocal((navigator.language || 'en').toLowerCase());
 </script>
 
-<Demo />
+<ClientOnly>
+  <Demo />
+</ClientOnly>
 
 <style>
 .VPPage > div > div {
