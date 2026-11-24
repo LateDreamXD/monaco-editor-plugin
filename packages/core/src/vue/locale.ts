@@ -45,7 +45,7 @@ let monacoImported = false;
 export const useLocal = (local: MonacoEditorLocal) => {
 	const loader = localeLoaders[local];
 	if (!loader)
-		return Promise.reject(new Error(`[monaco-editor-plugin] unsupported locale "${local}"`));
+		return console.warn(`[monaco-editor-plugin] unsupported locale "${local}", will use default english`);
 
 	if (monacoImported)
 		console.warn(
